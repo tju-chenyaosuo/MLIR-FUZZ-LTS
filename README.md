@@ -42,3 +42,58 @@ chat](https://discord.gg/xS7Z362),
 
 The LLVM project has adopted a [code of conduct](https://llvm.org/docs/CodeOfConduct.html) for
 participants to all modes of communication within the project.
+
+
+---
+---
+---
+
+# MLIR-FUZZ-LTS
+
+This repository provides long-term support (LTS) versions of MLIRSmith, MLIRod, and DESIL.
+We plan to update these tools every six months or annually.
+For each release, we also provide a Docker container to help users quickly get started.
+
+The project integrates mlirsmith, mlirod, and desil into mlir/tools and includes several scripts for testing and running the tools.
+
+The current base commit is: b83e458fe5330227581e1e65f3866ddfcd597837
+
+## Running MLIRSmith, MLIRod, and DESIL in Docker
+
+### Tool Functionality Test
+
+A validation script is available under `/MLIR-FUZZ-LTS/mlir-test`.
+This script checks both the correctness of generated MLIR programs and the basic functionality of the included tools.
+
+Run: `python3 test.py`
+
+### Running the Tools
+
+The script `/MLIR-FUZZ-LTS/mlir-scripts/driver.sh` provides a unified driver for running the three tools.
+You may also inspect the script to learn how to invoke each tool separately.
+
+## Build From Source
+
+You can build and run the tools manually using the following commands:
+
+```
+cd MLIR-FUZZ-LTS
+mkdir build
+cd build
+cmake -G Ninja ../llvm \
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+-DLLVM_ENABLE_PROJECTS=mlir\;clang\;llvm \
+-DLLVM_BUILD_EXAMPLES=ON \
+-DLLVM_TARGETS_TO_BUILD="X86;NVPTX;AMDGPU" \
+-DCMAKE_BUILD_TYPE=Release \
+-DLLVM_ENABLE_ASSERTIONS=ON
+cmake --build .
+```
+
+After building:
+
++ Add `build/lib` to your `LD_LIBRARY_PATH`.
+
++ All scripts under `mlir-test` and `mlir-scripts` assume that `MLIR-FUZZ-LTS` is located at the filesystem root (`/`).
+
++ Follow the instructions above to run the tools.

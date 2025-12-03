@@ -10,7 +10,7 @@ from enum import Enum
 from tqdm import tqdm
 
 MLIRSMITH = '/MLIR-FUZZ-LTS/build/bin/mlirsmith'
-# MLIRSMITH = '/MLIR-FUZZ-LTS/build/bin/desilmlirsmith'
+DESIL_MLIRSMITH = '/MLIR-FUZZ-LTS/build/bin/desilmlirsmith'
 MLIR_OPT = '/MLIR-FUZZ-LTS/build/bin/mlir-opt'
 
 CHECKSUM = '/MLIR-FUZZ-LTS/build/bin/CheckSum'
@@ -127,7 +127,7 @@ def test_desil_single() -> DESILTestResult:
 		if os.path.exists(file):
 			os.remove(file)
 
-	program_generate_cmd: str = f"{MLIRSMITH} 2>{mlir_file}"
+	program_generate_cmd: str = f"{DESIL_MLIRSMITH} 2>{mlir_file}"
 	program_generate_opt_cmd: str = f"{MLIR_OPT} {mlir_file} > /dev/null"
 	fixub_cmd: str = f'{FIXUB} {mlir_file} 2>{fixed_mlir_file}'
 	fixub_opt_cmd: str = f"{MLIR_OPT} {fixed_mlir_file} > /dev/null"
@@ -399,5 +399,5 @@ def test_desil_main():
 if __name__ == "__main__":
 	test_mlirsmith_main()
 	test_mlirod_main()
-	# test_desil_main()
+	test_desil_main()
 	# os.system("/data/llvm-project/build/bin/CreateNode 7468cdad70c16d81.mlir a.mlir 1>/dev/null 2>/dev/null")
