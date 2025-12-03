@@ -1,0 +1,6 @@
+add_subdirectory(ReplaceDataEdge)
+add_subdirectory(ReplaceControlEdge)
+add_subdirectory(DeleteNode)
+add_subdirectory(CreateNode)
+add_subdirectory(CollectCoverage)
+add_subdirectory(CollectInformation)

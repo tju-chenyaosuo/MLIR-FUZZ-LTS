@@ -1,0 +1,42 @@
+scf\.while .+ tensor : scf.while2
+scf\.execute_region .+ tensor : scf.execute_region2
+scf\.index_switch .+ tensor : scf.index_switch2
+scf\.if .+ tensor : scf.if2
+scf\.for .+ tensor : scf.for2
+cf\.br .+ tensor : cf.br2
+bb.+ tensor<.+> : cf.br2
+func\.call .+tensor<.+> : func.call2
+func\.func .+ tensor<.+> : func.func2
+linalg\.matmul .+ tensor<.+> : linalg.matmul2
+linalg\.generic .+ tensor<.+> : linalg.generic2
+linalg\.map .+ tensor<.+> : linalg.map2
+linalg\.copy .+ tensor<.+> : linalg.copy2
+linalg\.broadcast .+ tensor<.+> : linalg.broadcast2
+linalg\.reduce .+ tensor<.+> : linalg.reduce2
+linalg\.transpose .+ tensor<.+> : linalg.transpose2
+vector\.print .+<.+> : vector.print2
+math.absf .+ tensor<.+> : math.2absf 
+math.atan .+ tensor<.+> : math.2atan 
+math.atan2 .+ tensor<.+> : math.2atan2 
+math.ceil .+ tensor<.+> : math.2ceil 
+math.copySign .+ tensor<.+> : math.2copySign 
+math.cos .+ tensor<.+> : math.2cos 
+math.exp .+ tensor<.+> : math.2exp 
+math.exp2 .+ tensor<.+> : math.2exp2 
+math.expm1 .+ tensor<.+> : math.2expm1 
+math.floor .+ tensor<.+> : math.2floor 
+math.fma .+ tensor<.+> : math.2fma 
+math.log .+ tensor<.+> : math.2log 
+math.log10 .+ tensor<.+> : math.2log10 
+math.log1p .+ tensor<.+> : math.2log1p 
+math.log2 .+ tensor<.+> : math.2log2 
+math.powf .+ tensor<.+> : math.2powf 
+math.rsqrt .+ tensor<.+> : math.2rsqrt 
+math.sqrt .+ tensor<.+> : math.2sqrt 
+math.tan .+ tensor<.+> : math.2tan 
+math.tanh .+ tensor<.+> : math.2tanh 
+math.round .+ tensor<.+> : math.2round 
+math.roundeven .+ tensor<.+> : math.2roundeven 
+math.trunc .+ tensor<.+> : math.2trunc 
+math.fpowi .+ tensor<.+> : math.2fpowi 
+[a-zA-Z][a-zA-Z0-9]+\.[a-zA-Z0-9_]+ : all

@@ -1,0 +1,1103 @@
+{
+    "debug": false,
+    "supported_ops": [
+        {
+            "dialect": "func",
+            "is_terminator": false,
+            "op": "func",
+            "parent_ops": [
+                "builtin.module"
+            ],
+            "prob": 39.0
+        },
+        {
+            "dialect": "linalg",
+            "is_terminator": false,
+            "op": "matmul",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 35.0
+        },
+        {
+            "dialect": "linalg",
+            "is_terminator": false,
+            "op": "generic",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 13.0
+        },
+        {
+            "dialect": "linalg",
+            "is_terminator": false,
+            "op": "map",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 10.0
+        },
+        {
+            "dialect": "linalg",
+            "is_terminator": false,
+            "op": "copy",
+            "prob": 88.0
+        },
+        {
+            "dialect": "linalg",
+            "is_terminator": false,
+            "op": "transpose",
+            "prob": 63.0
+        },
+        {
+            "dialect": "linalg",
+            "is_terminator": false,
+            "op": "broadcast",
+            "prob": 74.0
+        },
+        {
+            "dialect": "linalg",
+            "is_terminator": false,
+            "op": "dot",
+            "prob": 24.0
+        },
+        {
+            "dialect": "memref",
+            "is_terminator": false,
+            "op": "assume_alignment",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 48.0
+        },
+        {
+            "dialect": "memref",
+            "is_terminator": false,
+            "op": "alloc",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 71.0
+        },
+        {
+            "dialect": "memref",
+            "is_terminator": false,
+            "op": "atomic_rmw",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 85.0
+        },
+        {
+            "dialect": "memref",
+            "is_terminator": false,
+            "op": "realloc",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 12.0
+        },
+        {
+            "dialect": "memref",
+            "is_terminator": false,
+            "op": "store",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 50.0
+        },
+        {
+            "dialect": "memref",
+            "is_terminator": false,
+            "op": "alloca",
+            "prob": 26.0
+        },
+        {
+            "dialect": "memref",
+            "is_terminator": false,
+            "op": "alloca_scope",
+            "prob": 57.0
+        },
+        {
+            "dialect": "memref",
+            "is_terminator": false,
+            "op": "load",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 69.0
+        },
+        {
+            "dialect": "memref",
+            "is_terminator": false,
+            "op": "copy",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 27.0
+        },
+        {
+            "dialect": "memref",
+            "is_terminator": false,
+            "op": "cast",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 72.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "addf",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 16.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "addi",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 73.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "andi",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 31.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "ceildivsi",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 87.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "cmpf",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 17.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "cmpi",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 68.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "constant",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 70.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "divf",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 17.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "divsi",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 73.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "divui",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 87.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "floordivsi",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 37.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "minsi",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 17.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "minui",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 43.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "mulf",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 28.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "muli",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 4.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "negf",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 8.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "ori",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 90.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "remf",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 92.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "remsi",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 23.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "remui",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 65.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "shli",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 68.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "shrsi",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 71.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "shrui",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 88.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "subf",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 6.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "subi",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 83.0
+        },
+        {
+            "dialect": "arith",
+            "is_terminator": false,
+            "op": "xori",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 38.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "absf",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 32.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "absi",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 40.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "atan",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 7.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "atan2",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 60.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "ceil",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 64.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "copySign",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 75.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "cos",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 85.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "ctlz",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 96.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "cttz",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 15.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "ctpop",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 3.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "exp",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 16.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "exp2",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 85.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "expm1",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 20.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "floor",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 89.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "fma",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 24.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "ipowi",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 9.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "log",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 58.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "log10",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 19.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "log1p",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 89.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "log2",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 62.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "powf",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 80.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "rsqrt",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 80.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "sqrt",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 7.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "tan",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 3.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "tanh",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 97.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "roundeven",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 75.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "round",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 75.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "trunc",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 85.0
+        },
+        {
+            "dialect": "math",
+            "is_terminator": false,
+            "op": "fpowi",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 81.0
+        },
+        {
+            "dialect": "scf",
+            "is_terminator": false,
+            "op": "if",
+            "parent_ops": [
+                "func.func"
+            ],
+            "prob": 10.0
+        },
+        {
+            "dialect": "scf",
+            "is_terminator": false,
+            "op": "execute_region",
+            "prob": 23.0
+        },
+        {
+            "dialect": "scf",
+            "is_terminator": false,
+            "op": "index_switch",
+            "prob": 66.0
+        },
+        {
+            "dialect": "scf",
+            "is_terminator": false,
+            "op": "while",
+            "prob": 3.0
+        },
+        {
+            "dialect": "affine",
+            "is_terminator": false,
+            "op": "apply",
+            "prob": 82.0
+        },
+        {
+            "dialect": "affine",
+            "is_terminator": false,
+            "op": "for",
+            "prob": 78.0
+        },
+        {
+            "dialect": "affine",
+            "is_terminator": false,
+            "op": "if",
+            "prob": 67.0
+        },
+        {
+            "dialect": "affine",
+            "is_terminator": false,
+            "op": "store",
+            "prob": 57.0
+        },
+        {
+            "dialect": "affine",
+            "is_terminator": false,
+            "op": "load",
+            "prob": 63.0
+        },
+        {
+            "dialect": "affine",
+            "is_terminator": false,
+            "op": "min",
+            "prob": 15.0
+        },
+        {
+            "dialect": "affine",
+            "is_terminator": false,
+            "op": "max",
+            "prob": 24.0
+        },
+        {
+            "dialect": "affine",
+            "is_terminator": false,
+            "op": "vector_load",
+            "prob": 18.0
+        },
+        {
+            "dialect": "affine",
+            "is_terminator": false,
+            "op": "vector_store",
+            "prob": 31.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "bitcast",
+            "prob": 61.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "broadcast",
+            "prob": 39.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "contract",
+            "prob": 73.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "compress_store",
+            "prob": 86.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "create_mask",
+            "prob": 0.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "extract",
+            "prob": 31.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "extract_strided_slice",
+            "prob": 57.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "gather",
+            "prob": 90.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "mask",
+            "prob": 46.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "transfer_read",
+            "prob": 37.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "transfer_write",
+            "prob": 70.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "fma",
+            "prob": 5.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "flat_transpose",
+            "prob": 93.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "insert_element",
+            "prob": 19.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "insert",
+            "prob": 80.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "load",
+            "prob": 20.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "masked_load",
+            "prob": 4.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "matrix_multiply",
+            "prob": 14.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "multi_reduction",
+            "prob": 30.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "outer_product",
+            "prob": 79.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "print",
+            "prob": 32.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "reduction",
+            "prob": 33.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "scan",
+            "prob": 61.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "scatter",
+            "prob": 10.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "shuffle",
+            "prob": 53.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "splat",
+            "prob": 70.0
+        },
+        {
+            "dialect": "vector",
+            "is_terminator": false,
+            "op": "transpose",
+            "prob": 25.0
+        },
+        {
+            "dialect": "tensor",
+            "is_terminator": false,
+            "op": "cast",
+            "prob": 68.0
+        },
+        {
+            "dialect": "tensor",
+            "is_terminator": false,
+            "op": "collapse_shape",
+            "prob": 95.0
+        },
+        {
+            "dialect": "tensor",
+            "is_terminator": false,
+            "op": "dim",
+            "prob": 44.0
+        },
+        {
+            "dialect": "tensor",
+            "is_terminator": false,
+            "op": "empty",
+            "prob": 0.0
+        },
+        {
+            "dialect": "tensor",
+            "is_terminator": false,
+            "op": "expand_shape",
+            "prob": 8.0
+        },
+        {
+            "dialect": "tensor",
+            "is_terminator": false,
+            "op": "extract",
+            "prob": 83.0
+        },
+        {
+            "dialect": "tensor",
+            "is_terminator": false,
+            "op": "from_elements",
+            "prob": 25.0
+        },
+        {
+            "dialect": "tensor",
+            "is_terminator": false,
+            "op": "generate",
+            "prob": 46.0
+        },
+        {
+            "dialect": "tensor",
+            "is_terminator": false,
+            "op": "insert",
+            "prob": 83.0
+        },
+        {
+            "dialect": "tensor",
+            "is_terminator": false,
+            "op": "rank",
+            "prob": 56.0
+        },
+        {
+            "dialect": "tensor",
+            "is_terminator": false,
+            "op": "splat",
+            "prob": 4.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "add",
+            "prob": 25.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "and",
+            "prob": 54.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "bool.constant",
+            "prob": 93.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "casts",
+            "prob": 47.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "castu",
+            "prob": 59.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "ceildivs",
+            "prob": 86.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "ceildivu",
+            "prob": 66.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "divs",
+            "prob": 92.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "divu",
+            "prob": 6.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "floordivs",
+            "prob": 70.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "maxs",
+            "prob": 58.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "maxu",
+            "prob": 37.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "mul",
+            "prob": 49.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "or",
+            "prob": 90.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "shl",
+            "prob": 22.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "shrs",
+            "prob": 62.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "shru",
+            "prob": 0.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "sizeof",
+            "prob": 27.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "sub",
+            "prob": 85.0
+        },
+        {
+            "dialect": "index",
+            "is_terminator": false,
+            "op": "xor",
+            "prob": 77.0
+        },
+        {
+            "dialect": "bufferization",
+            "is_terminator": false,
+            "op": "alloc_tensor",
+            "prob": 96.0
+        },
+        {
+            "dialect": "bufferization",
+            "is_terminator": false,
+            "op": "clone",
+            "prob": 32.0
+        },
+        {
+            "dialect": "bufferization",
+            "is_terminator": false,
+            "op": "dealloc_tensor",
+            "prob": 21.0
+        },
+        {
+            "dialect": "bufferization",
+            "is_terminator": false,
+            "op": "to_memref",
+            "prob": 48.0
+        },
+        {
+            "dialect": "bufferization",
+            "is_terminator": false,
+            "op": "to_tensor",
+            "prob": 40.0
+        }
+    ]
+}

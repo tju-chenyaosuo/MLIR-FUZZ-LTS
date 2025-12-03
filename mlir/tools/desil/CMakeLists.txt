@@ -1,0 +1,20 @@
+add_subdirectory(CheckSum)
+add_subdirectory(FixUBnew)
+add_subdirectory(MLIRSmith)
+add_subdirectory(ReduceCrash)
+add_subdirectory(ReducePrint)
+add_subdirectory(ReduceWrongCode)
+add_subdirectory(GetTargetOp)
+add_subdirectory(GetExeTargetOp)
+
+add_subdirectory(ReduceMLIR)
+add_subdirectory(ReduceExecuteCrash)
+add_subdirectory(AutoInstrumentation)
+add_subdirectory(ReduceLast)
+
+
+# add_subdirectory(ReplaceDataEdge)
+# add_subdirectory(ReplaceControlEdge)
+# add_subdirectory(DeleteNode)
+# add_subdirectory(CreateNode)
+# add_subdirectory(CollectCoverage)

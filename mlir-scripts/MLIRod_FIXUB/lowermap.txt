@@ -1,0 +1,193 @@
+arith.addf : --convert-arith-to-llvm
+arith.addi : --convert-arith-to-llvm
+arith.andi : --convert-arith-to-llvm
+arith.cmpf : --convert-arith-to-llvm
+arith.cmpi : --convert-arith-to-llvm
+arith.constant : --convert-arith-to-llvm
+arith.divf : --convert-arith-to-llvm
+arith.divsi : --convert-arith-to-llvm
+arith.divui : --convert-arith-to-llvm
+arith.maxf : --convert-arith-to-llvm
+arith.maxsi : --convert-arith-to-llvm
+arith.maxui : --convert-arith-to-llvm
+arith.minf : --convert-arith-to-llvm
+arith.minsi : --convert-arith-to-llvm
+arith.minui : --convert-arith-to-llvm
+arith.mulf : --convert-arith-to-llvm
+arith.muli : --convert-arith-to-llvm
+arith.negf : --convert-arith-to-llvm
+arith.ori : --convert-arith-to-llvm
+arith.shli : --convert-arith-to-llvm
+arith.shrsi : --convert-arith-to-llvm
+arith.shrui : --convert-arith-to-llvm
+arith.subf : --convert-arith-to-llvm
+arith.subi : --convert-arith-to-llvm
+arith.xori : --convert-arith-to-llvm
+arith.remf : --convert-arith-to-llvm
+arith.remsi : --convert-arith-to-llvm
+arith.remui : --convert-arith-to-llvm
+arith.select : --convert-arith-to-llvm
+arith.extui : --convert-arith-to-llvm
+arith.index_cast : --convert-arith-to-llvm
+arith.ceildivui : --arith-expand --convert-arith-to-llvm
+arith.ceildivsi : --arith-expand --convert-arith-to-llvm
+arith.floordivsi : --arith-expand --convert-arith-to-llvm
+math.absi : --convert-math-to-llvm
+math.cttz : --convert-math-to-llvm
+math.ctlz : --convert-math-to-llvm
+math.ctpop : --convert-math-to-llvm
+math.absf : --convert-math-to-llvm
+math.atan : --convert-math-to-llvm
+math.atan2 : --convert-math-to-llvm
+math.ceil : --convert-math-to-llvm
+math.copySign : --convert-math-to-llvm
+math.cos : --convert-math-to-llvm
+math.exp : --convert-math-to-llvm
+math.exp2 : --convert-math-to-llvm
+math.expm1 : --convert-math-to-llvm
+math.floor : --convert-math-to-llvm
+math.fma : --convert-math-to-llvm
+math.log : --convert-math-to-llvm
+math.log10 : --convert-math-to-llvm
+math.log1p : --convert-math-to-llvm
+math.log2 : --convert-math-to-llvm
+math.powf : --convert-math-to-llvm
+math.rsqrt : --convert-math-to-llvm
+math.sqrt : --convert-math-to-llvm
+math.tan : --convert-math-to-llvm
+math.tanh : --convert-math-to-llvm
+math.round : --convert-math-to-llvm
+math.roundeven : --convert-math-to-llvm
+math.trunc : --convert-math-to-llvm
+math.fpowi : --convert-math-to-llvm
+math.2absf : --math-expand-ops --convert-math-to-llvm
+math.2atan : --math-expand-ops --convert-math-to-llvm
+math.2atan2 : --math-expand-ops --convert-math-to-llvm
+math.2ceil : --math-expand-ops --convert-math-to-llvm
+math.2copySign : --math-expand-ops --convert-math-to-llvm
+math.2cos : --math-expand-ops --convert-math-to-llvm
+math.2exp : --math-expand-ops --convert-math-to-llvm
+math.2exp2 : --math-expand-ops --convert-math-to-llvm
+math.2expm1 : --math-expand-ops --convert-math-to-llvm
+math.2floor : --math-expand-ops --convert-math-to-llvm
+math.2fma : --math-expand-ops --convert-math-to-llvm
+math.2log : --math-expand-ops --convert-math-to-llvm
+math.2log10 : --math-expand-ops --convert-math-to-llvm
+math.2log1p : --math-expand-ops --convert-math-to-llvm
+math.2log2 : --math-expand-ops --convert-math-to-llvm
+math.2powf : --math-expand-ops --convert-math-to-llvm
+math.2rsqrt : --math-expand-ops --convert-math-to-llvm
+math.2sqrt : --math-expand-ops --convert-math-to-llvm
+math.2tan : --math-expand-ops --convert-math-to-llvm
+math.2tanh : --math-expand-ops --convert-math-to-llvm
+math.2round : --math-expand-ops --convert-math-to-llvm
+math.2roundeven : --math-expand-ops --convert-math-to-llvm
+math.2trunc : --math-expand-ops --convert-math-to-llvm
+math.2fpowi : --math-expand-ops --convert-math-to-llvm
+index.add : --convert-index-to-llvm
+index.and : --convert-index-to-llvm
+index.bool.constant : --convert-index-to-llvm
+index.casts : --convert-index-to-llvm
+index.castu : --convert-index-to-llvm
+index.ceildivs : --convert-index-to-llvm
+index.ceildivu : --convert-index-to-llvm
+index.constant : --convert-index-to-llvm
+index.divs : --convert-index-to-llvm
+index.divu : --convert-index-to-llvm
+index.floordivs : --convert-index-to-llvm
+index.maxs : --convert-index-to-llvm
+index.maxu : --convert-index-to-llvm
+index.mul : --convert-index-to-llvm
+index.or : --convert-index-to-llvm
+index.rems : --convert-index-to-llvm
+index.remu : --convert-index-to-llvm
+index.shl : --convert-index-to-llvm
+index.shrs : --convert-index-to-llvm
+index.shru : --convert-index-to-llvm
+index.sizeof : --convert-index-to-llvm
+index.sub : --convert-index-to-llvm
+index.xor : --convert-index-to-llvm
+tensor.collapse_shape : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --expand-strided-metadata --finalize-memref-to-llvm
+tensor.cast : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --finalize-memref-to-llvm
+tensor.empty : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --finalize-memref-to-llvm
+tensor.from_elements : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --finalize-memref-to-llvm
+tensor.dim : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --finalize-memref-to-llvm
+tensor.extract : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --finalize-memref-to-llvm
+tensor.insert : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --finalize-memref-to-llvm
+tensor.rank : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --finalize-memref-to-llvm
+tensor.splat : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+vector.print : --convert-vector-to-llvm
+vector.print2 : --convert-vector-to-scf --convert-vector-to-llvm --convert-scf-to-cf --convert-cf-to-llvm
+scf.if : --convert-scf-to-cf --convert-cf-to-llvm
+scf.for : --convert-scf-to-cf --convert-cf-to-llvm
+scf.while : --convert-scf-to-cf --convert-cf-to-llvm
+scf.index_switch : --convert-scf-to-cf --convert-cf-to-llvm
+scf.execute_region : --convert-scf-to-cf --convert-cf-to-llvm
+scf.while2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-scf-to-cf --convert-cf-to-llvm
+scf.if2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-scf-to-cf --convert-cf-to-llvm
+scf.index_switch2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-scf-to-cf --convert-cf-to-llvm
+scf.execute_region2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-scf-to-cf --convert-cf-to-llvm
+scf.for2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-scf-to-cf --convert-cf-to-llvm
+cf.br : --convert-cf-to-llvm
+cf.br2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-cf-to-llvm
+func.func : --convert-func-to-llvm
+func.func2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-func-to-llvm
+func.call : --convert-func-to-llvm
+func.call2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map"
+builtin.unrealized_conversion_cast : --reconcile-unrealized-casts
+memref.collapse_shape : --expand-strided-metadata --finalize-memref-to-llvm
+memref.expand_shape : --expand-strided-metadata --finalize-memref-to-llvm
+memref.subview : --expand-strided-metadata --finalize-memref-to-llvm
+memref.cast : --finalize-memref-to-llvm
+memref.dim : --finalize-memref-to-llvm
+memref.alloc : --finalize-memref-to-llvm
+memref.load : --finalize-memref-to-llvm
+memref.store : --finalize-memref-to-llvm
+memref.copy : --finalize-memref-to-llvm
+memref.assume_alignment : --finalize-memref-to-llvm
+memref.global : --finalize-memref-to-llvm
+memref.get_global : --finalize-memref-to-llvm
+bufferization.alloc_tensor : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map"
+bufferization.to_memref : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map"
+bufferization.to_tensor : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map"
+bufferization.dealloc : --bufferization-lower-deallocations --finalize-memref-to-llvm
+linalg.map : --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.matmul : --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.fill : --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.generic : --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.copy : --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.broadcast : --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.reduce : --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.transpose : --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.map2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.matmul2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.generic2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.copy2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.broadcast2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.reduce2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+linalg.transpose2 : --one-shot-bufferize="bufferize-function-boundaries copy-before-write unknown-type-conversion=identity-layout-map" --convert-linalg-to-loops --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+affine.apply : --lower-affine --convert-arith-to-llvm
+affine.min : --lower-affine --convert-arith-to-llvm
+affine.max : --lower-affine --convert-arith-to-llvm
+affine.store : --lower-affine --finalize-memref-to-llvm
+affine.load : --lower-affine --finalize-memref-to-llvm
+affine.for : --lower-affine --convert-scf-to-cf --convert-cf-to-llvm
+affine.if : --lower-affine --convert-scf-to-cf --convert-cf-to-llvm
+affine.vector_load : --lower-affine --convert-arith-to-llvm --convert-vector-to-llvm
+affine.vector_store : --lower-affine --convert-arith-to-llvm --convert-vector-to-llvm
+affine.delinearize_index : --lower-affine
+affine.if : --lower-affine --convert-scf-to-cf --convert-cf-to-llvm
+vector.bitcast : --convert-vector-to-llvm
+vector.broadcast : --convert-vector-to-llvm
+vector.create_mask : --convert-vector-to-llvm
+vector.extract_strided_slice : --convert-vector-to-llvm
+vector.fma : --convert-vector-to-llvm
+vector.insert : --convert-vector-to-llvm
+vector.shuffle : --convert-vector-to-llvm
+vector.splat : --convert-vector-to-llvm
+vector.transpose : --convert-vector-to-llvm
+vector.load : --convert-vector-to-llvm
+vector.store : --convert-vector-to-llvm
+vector.transfer_read : --convert-vector-to-scf --convert-vector-to-llvm --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+vector.transfer_write : --convert-vector-to-scf --convert-vector-to-llvm --convert-scf-to-cf --finalize-memref-to-llvm --convert-cf-to-llvm
+ub.poison : --convert-ub-to-llvm
