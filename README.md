@@ -58,6 +58,8 @@ The project integrates mlirsmith, mlirod, and desil into mlir/tools and includes
 
 The current base commit is: b83e458fe5330227581e1e65f3866ddfcd597837
 
+The provided docker image can be found at: https://zenodo.org/records/17808553
+
 ## Running MLIRSmith, MLIRod, and DESIL in Docker
 
 ### Tool Functionality Test
